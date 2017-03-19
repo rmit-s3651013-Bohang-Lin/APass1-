@@ -5,12 +5,12 @@ public abstract class Participates {
 	private int age;
 	private String state;
 	
-	public Participates(int athID, String athName, int athAge, String athState)
+	public Participates(int ID, String Name, int Age, String State)
 	{
-		setUniqueID(athID);
-		setName(athName);
-		setAge(athAge);
-		setState(athState);
+		setUniqueID(ID);
+		setName(Name);
+		setAge(Age);
+		setState(State);
 	}
 	public int getUniqueID() {
 		return uniqueID;

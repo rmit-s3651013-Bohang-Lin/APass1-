@@ -11,6 +11,10 @@ public class Athletes extends Participates {
 		super(athID, athName, athAge, athState);
 		type = new ArrayList<String>();
 	}
+	public Athletes()
+	{
+		this(0,"",0,"");
+	}
 
 	//增加四种运动员
 	
@@ -22,6 +26,31 @@ public class Athletes extends Participates {
         type.add("sprinters");
         type.add("superAthletes"); //get(3) 调用
 	}
+	//overriding 所有get set 方法
+	public int getAthID() {
+		return super.getUniqueID();
+	}
+	public void setAthID(int athID) {
+		super.setUniqueID(athID);
+	}
+	public String getAthName() {
+		return super.getName();
+	}
+	public void setAthName(String name) {
+		super.setName(name);
+	}
+	public int getAthAge() {
+		return super.getAge();
+	}
+	public void setAthAge(int age) {
+		super.setAge(age);;
+	}
+	public String getAthState() {
+		return super.getState();
+	}
+	public void setAthState(String state) {
+		super.setState(state);
+	}
 	
 	/*
 	public String  getName(int y)
@@ -29,21 +58,4 @@ public class Athletes extends Participates {
 		return super.getName();
 	}
 	*/
-	/*
-	public void readInput()
-	{
-		Scanner keyboard = new Scanner(System.in);
-		System.out.println("Enter athlete unique ID: ");
-		uniqueID = keyboard.nextInt();
-		System.out.println("Enter athlete name: ");
-		name = keyboard.nextLine();
-		System.out.println("Enter athlete age: ");
-		age = keyboard.nextInt();
-		System.out.println("Enter athlete state: ");
-		state = keyboard.nextLine();
-	}
-	public void writeOutput()
-	{
-		System.out.println("athlete unique ID: " + uniqueID);
-	}*/
 }

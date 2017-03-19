@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Ozlympic {
 
 	public static void main(String[] args) {
-		System.out.println("Ozlympic Game");1
+		System.out.println("Ozlympic Game");
 		
 		System.out.println("===================================");
 		System.out.println("1. Select a game to run");
